@@ -24,6 +24,13 @@ const navLinks = [
     }
 ]
 
+function OpenForm () {
+    document.getElementById("myForm").style.display = "block";
+}
+function CloseForm () {
+    document.getElementById("myForm").style.display = "none";
+}
+
 export default function Navigation ()  {
     return (
         <nav className="site-nav">
