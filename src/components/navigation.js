@@ -7,17 +7,21 @@ const navLinks = [
         path: '/'
     },
     {
-        title: 'ContactUs',
-        path: '/contactus'
-    },
-    {
         title: 'Store',
         path: '/store'
     },
     {
+        title: 'Cart',
+        path: '/cart'
+    },
+    {
+        title: 'ContactUs',
+        path: '/contactus'
+    },
+    {
         title: 'Login',
         path: '/login'
-    },
+    }
 ]
 
 export default function Navigation ()  {
