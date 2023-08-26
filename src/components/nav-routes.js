@@ -14,12 +14,12 @@ export default function NavRoutes () {
             <div className="App">
                 <Navigation/>
                 <Routes>
-                    <Route path="/" component={Home} />
-                    <Route path="/store" component={Store} />
-                    <Route path="/login" component={Login} />
-                    <Route path="/contactus" component={ContactUs} />
-                    <Route path="/cart" component={Cart} />
-                    <Route component={() => 404} />
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/store" element={<Store/>} />
+                    <Route path="/login" element={<Login/>} />
+                    <Route path="/contactus" element={<ContactUs/>} />
+                    <Route path="/cart" element={<Cart/>} />
+                    <Route element={() => 404} />
                 </Routes>
             </div>
         </Router>

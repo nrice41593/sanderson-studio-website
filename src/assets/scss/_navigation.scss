@@ -1,11 +1,13 @@
+@import './variables';
+
 .site-nav{
     background: white;
     height: 65px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    color: #444;
-    position: fixed;
+    color: $text-color;
+    position: sticky;
     z-index: 100;
     top: 0;
 
@@ -39,10 +41,10 @@
             text-decoration: none;
             padding: 0 20px 0 20px;
             font-size: 20px;
-            color: #444;
+            color: $text-color;
 
             &:hover {
-                color: #2997ff;
+                color: $text-link;
             }
         }
     }
