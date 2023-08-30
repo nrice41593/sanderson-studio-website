@@ -7,6 +7,7 @@ import Login from "../pages/login"
 import Store from "../pages/store"
 import Navigation from "../components/navigation";
 import Cart from '../pages/cart';
+import Account from "../pages/account";
 
 export default function NavRoutes () {
     return (
@@ -16,9 +17,10 @@ export default function NavRoutes () {
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/store" element={<Store/>} />
-                    <Route path="/login" element={<Login/>} />
+                    <Route path="/account" element={<Account/>} />
                     <Route path="/contactus" element={<ContactUs/>} />
                     <Route path="/cart" element={<Cart/>} />
+                    <Route path="/login" element={<Login />} />
                     <Route element={() => 404} />
                 </Routes>
             </div>

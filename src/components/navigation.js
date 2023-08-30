@@ -17,32 +17,29 @@ const navLinks = [
     {
         title: 'ContactUs',
         path: '/contactus'
-    },
-    {
-        title: 'Login',
-        path: '/login'
     }
 ]
 
-function OpenForm () {
-    document.getElementById("myForm").style.display = "block";
-}
-function CloseForm () {
-    document.getElementById("myForm").style.display = "none";
-}
+
 
 export default function Navigation ()  {
     return (
         <nav className="site-nav">
             <span className="menu-title">Ecommerce Store</span>
             <div className="menu-content-contain">
-                <ul>
+                <ul className="dropdown">
                     {navLinks.map((link, index) => (
                         <li key={index}>
                             <Link to={link.path}>{link.title}</Link>
                         </li>
                         ))
                     }
+                    <li>
+                        <Link to="/account" className="dropbtn">Account</Link>
+                        <div class="dropdown-content">
+                            <Link to="/login">Login</Link>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>

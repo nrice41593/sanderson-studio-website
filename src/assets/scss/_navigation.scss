@@ -10,6 +10,7 @@
     position: sticky;
     z-index: 100;
     top: 0;
+    box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.1);
 
     .menu-content-container {
         display: flex;
@@ -49,3 +50,30 @@
         }
     }
 }
+
+.dropbtn {
+    color: $text-color;
+    padding: 16px;
+    border: none;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-right: 20px;
+    margin-top: 10px;
+    min-width: 200px;
+    z-index: 5;
+}
+
+.dropdown-content a {
+    color: $text-color;
+    margin: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {color: $text-link;}
