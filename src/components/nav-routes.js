@@ -12,7 +12,7 @@ import Account from "../pages/account";
 export default function NavRoutes () {
     return (
         <Router>
-            <div className="App">
+            <div>
                 <Navigation/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>

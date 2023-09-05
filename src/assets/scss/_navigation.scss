@@ -1,12 +1,10 @@
 @import './variables';
 
 .site-nav{
-    background: white;
     height: 65px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    color: $text-color;
     position: sticky;
     z-index: 100;
     top: 0;
@@ -42,17 +40,11 @@
             text-decoration: none;
             padding: 0 20px 0 20px;
             font-size: 20px;
-            color: $text-color;
-
-            &:hover {
-                color: $text-link;
-            }
         }
     }
 }
 
 .dropbtn {
-    color: $text-color;
     padding: 16px;
     border: none;
     text-decoration: none;
@@ -68,7 +60,6 @@
 }
 
 .dropdown-content a {
-    color: $text-color;
     margin: 20px;
     text-decoration: none;
     display: block;
@@ -77,3 +68,57 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {color: $text-link;}
+
+
+
+@media (prefers-color-scheme: light) {
+    .site-nav {
+        background-color: $background;
+        color: $text-color;
+    }
+    .dropbtn {
+        color: $text-color;
+    }
+    .dropdown-content {
+        background-color: $background;
+    }
+    .dropdown-content a {
+        color: $text-color;
+    }
+    a {
+        color: $text-color;
+
+        &:hover {
+            color: $text-link;
+        }
+    }
+    
+}
+@media (prefers-color-scheme: dark) {
+    nav {
+        border-top: 1px solid rgb(108 108 112);
+        border-bottom: 1px solid rgb(108 108 112);
+    }
+    .site-nav {
+        background-color: rgba(36, 36, 38, 0.89);
+        color: $text-color-dark;
+        backdrop-filter: blur(10px);
+    }
+    .dropbtn {
+        color: $text-color-dark;
+    }
+    .dropdown-content {
+        background-color: rgba(36, 36, 38, 0.89);
+        backdrop-filter: blur(10px);
+    }
+    .dropdown-content a {
+        color: $text-color-dark;
+    }
+    a {
+        color: $text-color-dark;
+
+        &:hover {
+            color: $text-link-dark;
+        }
+    }
+}

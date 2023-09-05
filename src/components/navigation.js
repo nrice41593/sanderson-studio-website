@@ -26,7 +26,7 @@ export default function Navigation ()  {
     return (
         <nav className="site-nav">
             <span className="menu-title">Ecommerce Store</span>
-            <div className="menu-content-contain">
+            <div className="menu-content-container">
                 <ul className="dropdown">
                     {navLinks.map((link, index) => (
                         <li key={index}>
@@ -38,6 +38,9 @@ export default function Navigation ()  {
                         <Link to="/account" className="dropbtn">Account</Link>
                         <div class="dropdown-content">
                             <Link to="/login">Login</Link>
+                            <Link to="/login">Manage Account</Link>
+                            <Link to="/login"></Link>
+                            <Link to="/login"></Link>
                         </div>
                     </li>
                 </ul>
