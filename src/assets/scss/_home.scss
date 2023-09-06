@@ -1,19 +1,8 @@
 @import './variables';
 
 .home {
-    
-    
-    h1 {
-        width: 100%;
-        color: $text-color;
-        padding: 2em;
-    }
-
-    .bg-white {
-        background: $background;
-    }
 
     .img-max-width {
-        width: 100%;
+        width: 200px;
     }
 }

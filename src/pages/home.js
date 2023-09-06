@@ -1,10 +1,11 @@
 import React from "react";
-import spacePatches from "../assets/images/Space.jpeg"
+
+import Featured from "../components/featured";
 
 export default function Home () {
     return(
         <div className="home">
-                <img src={spacePatches} className="img-max-width"/>
+            <Featured/>
         </div>
     )
 }
