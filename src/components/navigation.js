@@ -7,25 +7,23 @@ const navLinks = [
         path: '/'
     },
     {
-        title: 'Store',
-        path: '/store'
+        title: 'Vision',
+        path: '/vision'
     },
     {
-        title: 'Cart',
-        path: '/cart'
+        title: 'In The Studio',
+        path: '/inthestudio'
     },
     {
-        title: 'ContactUs',
-        path: '/contactus'
-    }
+        title: 'Commission',
+        path: '/commission'
+    },
 ]
-
-
 
 export default function Navigation ()  {
     return (
         <nav className="site-nav">
-            <span className="menu-title">Ecommerce Store</span>
+            <span className="menu-title">Sanderson Studio</span>
             <div className="menu-content-container">
                 <ul className="dropdown">
                     {navLinks.map((link, index) => (
@@ -34,15 +32,6 @@ export default function Navigation ()  {
                         </li>
                         ))
                     }
-                    <li>
-                        <Link to="/account" className="dropbtn">Account</Link>
-                        <div class="dropdown-content">
-                            <Link to="/login">Login</Link>
-                            <Link to="/login">Manage Account</Link>
-                            <Link to="/login"></Link>
-                            <Link to="/login"></Link>
-                        </div>
-                    </li>
                 </ul>
             </div>
         </nav>

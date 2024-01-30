@@ -1,8 +1,17 @@
 @import './variables';
 
 .home {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.vision-box-container {
+    display: flex;
+    align-items: center;
 
-    .img-max-width {
-        width: 200px;
-    }
+}
+.vision-box-container-text {
+    position: absolute;
+    text-align: center;
+    margin-left: 50px;
 }

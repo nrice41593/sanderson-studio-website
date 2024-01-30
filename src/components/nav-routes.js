@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import Navigation from "./navigation";
+
 import Home from "../pages/home"
-import ContactUs from "../pages/contact-us"
-import Login from "../pages/login"
-import Store from "../pages/store"
-import Navigation from "../components/navigation";
-import Cart from '../pages/cart';
-import Account from "../pages/account";
+import AboutTheArtist from "../pages/about-the-artist";
+import Commission from "../pages/commission";
+import InTheStudio from "../pages/in-the-studio";
+import Vision from "../pages/vision";
 
 export default function NavRoutes () {
     return (
@@ -16,11 +16,10 @@ export default function NavRoutes () {
                 <Navigation/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="/store" element={<Store/>} />
-                    <Route path="/account" element={<Account/>} />
-                    <Route path="/contactus" element={<ContactUs/>} />
-                    <Route path="/cart" element={<Cart/>} />
-                    <Route path="/login" element={<Login />} />
+                    <Route path="/abouttheartist" element={<AboutTheArtist/>} />
+                    <Route path="/commission" element={<Commission/>} />
+                    <Route path="/inthestudio" element={<InTheStudio/>} />
+                    <Route path="/vision" element={<Vision/>} />
                     <Route element={() => 404} />
                 </Routes>
             </div>

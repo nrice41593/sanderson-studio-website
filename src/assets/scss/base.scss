@@ -8,8 +8,8 @@ body {
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     font-weight: 500;
     margin: 0;
-    background-color: #f8f9fa;
-    color: $text-color-dark;
+    background-color: $background;
+    color: $text-color;
 }
 button {
     background-color: $text-link;
@@ -20,74 +20,26 @@ button {
 hr {
     width: 750px;
 }
-
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: $background;
-        color: $text-color;
-    }
-    button {
-        background-color: $text-link;
-    }
-    .site-nav {
-        background-color: rgb(255, 255, 255, 0.705);
-        color: $text-color;
-        backdrop-filter: blur(10px);
-    }
-    .dropbtn {
-        color: $text-color;
-    }
-    .dropdown-content {
-        background-color: rgb(255, 255, 255, 0.705);
-        color: $text-color;
-        backdrop-filter: blur(10px);
-    }
-    .dropdown-content a {
-        color: $text-color;
-    }
-    a {
-        color: $text-color;
-
-        &:hover {
-            color: $text-link;
-        }
-    }
-    
+.site-nav {
+    background-color: rgb(255, 255, 255, 0.705);
+    color: $text-color;
+    backdrop-filter: blur(10px);
 }
-@media (prefers-color-scheme: dark) {
-    body{
-        background-color: $background-dark;
-        color: $text-color-dark;
-    }
+.dropbtn {
+    color: $text-color;
+}
+.dropdown-content {
+    background-color: rgb(255, 255, 255, 0.705);
+    color: $text-color;
+    backdrop-filter: blur(10px);
+}
+.dropdown-content a {
+    color: $text-color;
+}
+a {
+    color: $text-color;
 
-    button {
-        background-color: $text-link-dark;
-    }
-
-    nav {
-        border-top: 1px solid rgb(108 108 112);
-        border-bottom: 1px solid rgb(108 108 112);
-    }
-    .site-nav {
-        background-color: rgba(36, 36, 38, 0.705);
-        color: $text-color-dark;
-        backdrop-filter: blur(10px);
-    }
-    .dropbtn {
-        color: $text-color-dark;
-    }
-    .dropdown-content {
-        background-color: rgba(36, 36, 38, 0.705);
-        backdrop-filter: blur(10px);
-    }
-    .dropdown-content a {
-        color: $text-color-dark;
-    }
-    a {
-        color: $text-color-dark;
-
-        &:hover {
-            color: $text-link-dark;
-        }
+    &:hover {
+        color: $text-link;
     }
 }
