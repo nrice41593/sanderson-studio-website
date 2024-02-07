@@ -1,5 +1,7 @@
-import React from "react";
-import {Link} from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import NewsletterPopup from "./stay-connected/stay-connected"; // Import the NewsletterPopup component
+import logo from '../assets/images/SandersonStudioLogo.png';
 
 const navLinks = [
     {
@@ -18,22 +20,35 @@ const navLinks = [
         title: 'Commission',
         path: '/commission'
     },
-]
+];
 
-export default function Navigation ()  {
+export default function Navigation() {
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handlePopupToggle = () => {
+        setShowPopup(!showPopup);
+    };
+
     return (
-        <nav className="site-nav">
-            <span className="menu-title">Sanderson Studio</span>
-            <div className="menu-content-container">
-                <ul className="dropdown">
-                    {navLinks.map((link, index) => (
-                        <li key={index}>
-                            <Link to={link.path}>{link.title}</Link>
+        <div>
+            <nav className="site-nav">
+                <span className="menu-title"><img src={logo} alt="Logo"/></span>
+                <div className="menu-content-container">
+                    <ul className="dropdown">
+                        {navLinks.map((link, index) => (
+                            <li key={index}>
+                                <Link to={link.path}>{link.title}</Link>
+                            </li>
+                        ))}
+                        {/* Add a list item for the newsletter popup trigger */}
+                        <li>
+                            <Link onClick={handlePopupToggle}>Stay Connected</Link>
                         </li>
-                        ))
-                    }
-                </ul>
-            </div>
-        </nav>
-    )
+                    </ul>
+                </div>
+                
+            </nav>
+            {showPopup && <NewsletterPopup />}
+        </div>
+    );
 }

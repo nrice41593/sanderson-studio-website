@@ -3,15 +3,19 @@
 .home {
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 .vision-box-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
-
+    width: 100%;
 }
 .vision-box-container-text {
     position: absolute;
     text-align: center;
     margin-left: 50px;
+}
+.img-100 {
+    width: 100%;
 }

@@ -4,6 +4,14 @@
 @import './login';
 @import './featured';
 
+@font-face{
+    font-family: 'Galanthia';
+    src: url("../fonts/Galanthia/Galanthia-Regular.otf")
+}
+
+.galanthia {
+    font-family: 'Galanthia';
+}
 body {
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     font-weight: 500;
