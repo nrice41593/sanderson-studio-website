@@ -36,7 +36,7 @@ export default function Home () {
                     style={{
                         fontSize: 25,
                         lineHeight: 2,
-                        textAlign: 'center'
+                        textAlign: 'left'
                     }}
                 >
                     Creating and experiencing art requires a steady and unhurried spirit.<br/>

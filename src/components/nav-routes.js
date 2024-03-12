@@ -8,6 +8,7 @@ import AboutTheArtist from "../pages/about-the-artist";
 import Commission from "../pages/commission";
 import InTheStudio from "../pages/in-the-studio";
 import Vision from "../pages/vision";
+import Footer from "./footer";
 
 export default function NavRoutes () {
     return (
@@ -22,6 +23,7 @@ export default function NavRoutes () {
                     <Route path="/vision" element={<Vision/>} />
                     <Route element={() => 404} />
                 </Routes>
+                <Footer/>
             </div>
         </Router>
     )

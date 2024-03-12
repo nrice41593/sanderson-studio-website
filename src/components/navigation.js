@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import NewsletterPopup from "./stay-connected/stay-connected"; // Import the NewsletterPopup component
 import logo from '../assets/images/SandersonStudioLogo.png';
 
 const navLinks = [
@@ -40,15 +39,9 @@ export default function Navigation() {
                                 <Link to={link.path}>{link.title}</Link>
                             </li>
                         ))}
-                        {/* Add a list item for the newsletter popup trigger */}
-                        <li>
-                            <Link onClick={handlePopupToggle}>Stay Connected</Link>
-                        </li>
                     </ul>
                 </div>
-                
-            </nav>
-            {showPopup && <NewsletterPopup />}
+            </nav> 
         </div>
     );
 }
